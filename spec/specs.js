@@ -57,4 +57,12 @@ describe("Game", function () {
       Game.isPrototypeOf(testGame).should.equal(true);
      });
    });
+
+  describe("isWin", function() {
+    it("returns 'Win!' if the win condition is met", function() {
+      var newGame = Game.create();
+      newGame.board.spaces=["X","X","X",[2,1],"O",[2,3],"O",[3,2],[3,3]];
+      newGame.isWin(newGame.board.spaces).should.equal("Win!");
+    });
+  });
 });
