@@ -1,8 +1,11 @@
-table td {
-  border-spacing: 5px;
+table {
+	border: 5px solid white;
+	width: 300px;
+	height: 300px;
+}
+
+td {
   border: 1px solid black;
-  padding: 10px 10px 10px 10px;
+  padding: 35px 35px 35px 35px;
 }
-table tr {
-  width:50px;
-}
+
